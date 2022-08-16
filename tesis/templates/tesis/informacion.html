@@ -1,0 +1,51 @@
+{%  extends "tesis/base.html" %}
+
+{% load static %}
+
+{%  block content %}
+   <!-- Heading -->
+   <section class="page-section clearfix" id="justificacion" >
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'tesis/img/cro1.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded ">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper" style="color: white">¿Qué es la Enfermedad de Crohn?</span>
+            <!--span class="section-heading-lower">Importancia</span-->
+          </h2>
+          <p class="mb-3" style="text-align: justify;font-size: 18px;">
+           La enfermedad de Crohn es una enfermedad crónica que causa inflamación en el tracto digestivo.
+              Puede afectar cualquier parte de este tracto, que va desde su boca hasta su ano.
+              Pero, en general, afecta el intestino delgado y el comienzo del intestino grueso.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+   <section class="page-section clearfix" id="limitaciones">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'tesis/img/cro5.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper" style="color: white; margin-top: -30px;" >Causas</span>
+            <!--span class="section-heading-lower">Importancia</span-->
+          </h2>
+          <p class="mb-3" style="text-align: justify;font-size: 18px;">
+              La causa exacta de la enfermedad de Crohn se desconoce. Es una afección que se presenta cuando el sistema inmunitario del
+              propio cuerpo ataca por error y destruye el tejido corporal sano (trastorno autoinmunitario).
+            Cuando partes del tubo digestivo permanecen hinchadas o inflamadas, las paredes intestinales resultan engrosadas.
+            Los factores que pueden jugar un papel en la enfermedad de Crohn incluyen:
+
+            <br>•Los genes y los antecedentes familiares (las personas que son blancas o de ascendencia judía europea están en mayor riesgo).
+            •Los factores ambientales.<br>
+            •Tendencia del cuerpo a reaccionar en forma exagerada a bacterias normales en los intestinos.<br>
+            •Tabaquismo.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

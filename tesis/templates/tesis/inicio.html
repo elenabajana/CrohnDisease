@@ -1,0 +1,45 @@
+{%  extends "tesis/base.html" %}
+
+{% load static %}
+
+{%  block content %}
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <center> <img class="img-fluid mb-3 mb-lg-0 rounded" src="{% static 'tesis/img/fondocrohn.jpg' %}" alt=""> </center>
+        <div class=" left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper" style="color: black">Justificación</span>
+            <!--span class="section-heading-lower">Importancia</span-->
+          </h2>
+         <p  class="mb-3" style="text-align: justify;font-size: 18px;">
+              Este estudio busca proporcionar un modelo de clasificación de diagnóstico de pacientes que sufren la enfermedad de Crohn, además de su posible tratamiento. Todo ello gracias a los algoritmos de aprendizaje supervisando en Machine Learning (Gradient Boosting Classification y Árboles de Clasificación).
+Mediante el uso de un modelo predictivo se tomará en cuenta los factores de riesgo para generar su clasificación y de esta forma evitar situaciones o consecuencias que conducen drásticamente a la posible defunción del paciente.
+         </p>
+            <br>
+             <h2 class="section-heading mb-4">
+                <span class="section-heading-upper" style="color: black">Alcances del Proyecto</span>
+                <!--span class="section-heading-lower">Alcances</span-->
+              </h2>
+<p class="mb-3"  style="text-align: justify;font-size: 18px;">
+                  Mediante la recopilación de todos los artículos tomados de la plataforma de Google Académico, Dialnet, Redalyc, Scielo, entre otras, realizando el uso de los criterios de inclusión y exclusión con base en las palabras claves identificadas referente al tema investigativo.
+                  <br>
+                  <b style="color: black">1.</b>Facilitar el diagnóstico y posible tratamiento a los médicos noveles en la enfermedad de Crohn a través de entrevistas realizadas a los mismos.
+<br>
+                  <b style="color: black">2.</b>Construir un modelo predictivo haciendo uso de tecnologías Open Source, tales como: Lenguaje de Programación Python, así como el Framework Django de Python.
+<br>
+                  <b style="color: black">3.</b>Evaluar el modelo clasificador y considerar las variables clínicas descritas en el mismo, consultando con los expertos en busca de nuevos hallazgos científicos.
+<br>
+              </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Message -->
+
+{% endblock %}

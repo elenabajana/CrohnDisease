@@ -1,0 +1,38 @@
+{%  extends "tesis/base2.html" %}
+{% load static %}
+{%  block content %}
+
+<center><div class="col-md-4" id=login style="height: 500px; margin-top: 180px; border-style: solid; border-width: 15px; border-color: white;border-radius: 20px;" >
+<br>
+    <h1 style="color: black; font-family: 'Georgia';"><b>INICIAR SESIÓN</b></h1>
+     <form method="post">
+      {% csrf_token %}
+        <br><br><br>
+         <div class="input-group col-lg-8 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input id="username" type="text" name="username" placeholder="USUARIO" class="form-control bg-white border-left-0 border-md">
+         </div>
+         <div class="input-group col-lg-8 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-lock text-muted"></i>
+                            </span>
+                        </div>
+                        <input id="password" type="password" name="password" placeholder="CONTRASEÑA" class="form-control bg-white border-left-0 border-md">
+         </div>
+         <div class="form-group col-lg-8 mx-auto mb-4">
+             <button type="submit" class="btn btn-primary btn-block py-2"><span class="font-weight-bold">LOGIN</span></button>
+         </div>
+
+    </form>
+    <div class="form-group col-lg-5 mx-auto mb-4">
+                        <a href="admin/" class="btn btn-dark btn-block py-2">
+                            <span class="font-weight-bold">Administrador</span>
+                        </a>
+    </div>
+</div></center>
+{% endblock %}
