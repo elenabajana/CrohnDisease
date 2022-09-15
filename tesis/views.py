@@ -129,7 +129,7 @@ def resultadog(request, sklearn=None):
     from sklearn.metrics import confusion_matrix
 
     # Conexion a la base de datos
-    db2 = sqlite3.connect("../db.sqlite3")
+    db2 = sqlite3.connect("./db.sqlite3")
 
     filename = 'base_final.csv'
     db = pd.read_csv(filename, delimiter=",")
@@ -203,7 +203,7 @@ def resultadoarbol(request, sklearn=None):
     from sklearn.metrics import confusion_matrix
 
     # Conexion a la base de datos
-    db2 = sqlite3.connect("../db.sqlite3")
+    db2 = sqlite3.connect("./db.sqlite3")
 
     filename = 'base_final.csv'
     db = pd.read_csv(filename, delimiter=",")

@@ -36,14 +36,14 @@
       <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4">
         <a class="nav-link text-uppercase text-expanded" href="{% url 'inicio' %}">Inicio <span class="sr-only">(current)</span></a>
       </li>
+    <li class="nav-item {% if request.path == '/informacion' %}active{% endif %} px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="{% url 'informacion' %}">Información</a>
+      </li>
       <li class="nav-item {% if request.path == '/agregarfactor' %}active{% endif %} px-lg-4">
          <a class="nav-link text-uppercase text-expanded" href="{% url 'agregarfactor' %}">Agregar Factores</a>
       </li>
-      <li class="nav-item {% if request.path == '/informacion' %}active{% endif %} px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="{% url 'informacion' %}">Informacion</a>
-      </li>
       <li class="nav-item {% if request.path == '/contactanos' %}active{% endif %} px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="{% url 'contactanos' %}">Contactanos</a>
+          <a class="nav-link text-uppercase text-expanded" href="{% url 'contactanos' %}">Contáctanos</a>
       </li>
     </ul>
     <li class="nav-item ml-auto"> <a href="{% url 'logout' %}" class="link" >
